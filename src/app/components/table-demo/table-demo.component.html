@@ -1,0 +1,64 @@
+<table class="table">
+    <thead class="thead-dark">
+        <button type="button" class="btn btn-success" (click)="add()">Add</button>
+        <button type="button" class="btn btn-primary" (click)="edit()">Edit</button>
+        <button type="button" class="btn btn-danger" (click)="delete()">Delete</button>
+      <tr *ngFor="let data of tableData ; index as i">
+        <th scope="col">Action</th>
+        <th scope="col">{{data}}</th>
+        <!-- <th scope="col">{{data}}</th>
+        <th scope="col">{{data}}</th> -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let raw of tableRawData ; index as i">
+        <th scope="row" >1</th>
+        <td>{{raw}}</td>
+        <!-- <td>{{rawData[i]}}</td>
+        <td>{{rawData[i]}}</td> -->
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <!-- <td>{{tableRaw1Data[0]}}</td>
+        <td>{{tableRaw1Data[3]}}</td>
+        <td>{{tableRaw1Data[1]}}</td> -->
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <!-- <td>{{tableRaw1Data[0]}}</td>
+        <td>{{tableRaw1Data[2]}}</td>
+        <td>@{{tableRaw1Data[1]}}</td> -->
+      </tr>
+    </tbody>
+  </table>
+  
+  <table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">{{tableData[0]}}</th>
+        <th scope="col">{{tableData[1]}}</th>
+        <th scope="col">{{tableData[2]}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <!-- <td>{{tableRaw1Data[0]}}</td>
+        <td>{{tableRaw1Data[3]}}</td>
+        <td>{{tableRaw1Data[2]}}</td> -->
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <!-- <td>{{tableRaw1Data[3]}}</td>
+        <td>{{tableRaw1Data[1]}}</td>
+        <td>{{tableRaw1Data[2]}}</td> -->
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <!-- <td>{{tableRaw1Data[3]}}</td>
+        <td>{{tableRaw1Data[1]}}</td>
+        <td>{{tableRaw1Data[0]}}</td> -->
+      </tr>
+    </tbody>
+  </table>

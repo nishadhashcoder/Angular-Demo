@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'demo-app';
+
+  loadedFeature = 'nis';
+  onNavigate(nishad : string){
+    this.loadedFeature = nishad;
+
+  }
 }
